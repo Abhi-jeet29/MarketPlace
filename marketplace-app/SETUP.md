@@ -22,6 +22,7 @@ DATABASE_URL="postgresql://username:password@host:port/database?sslmode=require"
 ```
 
 **To get your Neon database URL:**
+
 1. Go to [neon.tech](https://neon.tech)
 2. Create an account and a new project
 3. Copy the connection string from your project dashboard
@@ -58,15 +59,18 @@ Open [http://localhost:3000](http://localhost:3000) to view your Nike marketplac
 ## Troubleshooting
 
 ### Database Connection Issues
+
 - Ensure your `DATABASE_URL` is correct
 - Check that your Neon database is active
 - Verify SSL mode is set to `require`
 
 ### Migration Issues
+
 - Make sure you've run `npm run db:generate` before `npm run db:migrate`
 - Check that your database URL has write permissions
 
 ### Seeding Issues
+
 - Ensure migrations have been run successfully
 - Check that the products table exists in your database
 
