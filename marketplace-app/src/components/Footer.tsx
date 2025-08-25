@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="mt-16 border-t border-[--color-light-300] bg-[--color-dark-900] text-[--color-light-100]">
+    <footer className="mt-16 border-t border-[--color-light-300] bg-[#000000] text-[--color-light-100]">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 py-10 sm:px-6 md:grid-cols-5">
         <div className="md:col-span-1">
           <Link href="#" className="inline-flex items-center" aria-label="Home">
