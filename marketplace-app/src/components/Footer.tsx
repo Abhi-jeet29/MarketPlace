@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 py-10 sm:px-6 md:grid-cols-5">
         <div className="md:col-span-1">
           <Link href="#" className="inline-flex items-center" aria-label="Home">
-            <Image src="/logo.svg" width={32} height={32} alt="Logo" className="invert" />
+            <Image src="/logo.svg" width={84} height={84} alt="Logo" className="invert" />
           </Link>
         </div>
 
@@ -153,7 +153,7 @@ export default function Footer() {
             />
           </Link>
         </div>
-        <p className="text-[--color-light-400] text-center text-[length:--text-footnote] leading-[--text-footnote--line-height]">
+        <p className="text-gray-400 text-center text-[length:--text-footnote] leading-[--text-footnote--line-height]">
           © {new Date().getFullYear()} MarketPlace. All rights reserved.
         </p>
       </div>

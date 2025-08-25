@@ -28,7 +28,7 @@ export default function Navbar() {
       >
         <div className="flex items-center gap-3">
           <Link href="#" className="flex items-center" aria-label="Home">
-            <Image src="/logo.svg" alt="Logo" width={26} height={26} priority />
+            <Image src="/logo.svg" alt="Logo" width={42} height={42} priority />
           </Link>
         </div>
 
