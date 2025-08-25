@@ -12,27 +12,27 @@ export default function Footer() {
         </div>
 
         <nav aria-label="Featured" className="space-y-3">
-          <h4 className="text-[length:--text-heading-3] font-[--text-heading-3--font-weight]">
+          <h4 className="text-[length:--text-heading-3] font-[--text-heading-3--font-weight] text-white">
             Featured
           </h4>
-          <ul className="space-y-2 text-[--color-light-400]">
+          <ul className="space-y-2 text-neutral-400">
             <li>
-              <Link href="#" className="hover:text-[--color-light-200]">
+              <Link href="#" className="hover:text-neutral-200">
                 Air Force 1
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-[--color-light-200]">
+              <Link href="#" className="hover:text-neutral-200">
                 Huarache
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-[--color-light-200]">
+              <Link href="#" className="hover:text-neutral-200">
                 Air Max 90
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-[--color-light-200]">
+              <Link href="#" className="hover:text-neutral-200">
                 Air Max 95
               </Link>
             </li>
@@ -40,27 +40,27 @@ export default function Footer() {
         </nav>
 
         <nav aria-label="Shoes" className="space-y-3">
-          <h4 className="text-[length:--text-heading-3] font-[--text-heading-3--font-weight]">
+          <h4 className="text-[length:--text-heading-3] font-[--text-heading-3--font-weight] text-white">
             Shoes
           </h4>
-          <ul className="space-y-2 text-[--color-light-400]">
+          <ul className="space-y-2 text-neutral-400">
             <li>
-              <Link href="#" className="hover:text-[--color-light-200]">
+              <Link href="#" className="hover:text-neutral-200">
                 All Shoes
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-[--color-light-200]">
+              <Link href="#" className="hover:text-neutral-200">
                 Custom Shoes
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-[--color-light-200]">
+              <Link href="#" className="hover:text-neutral-200">
                 Jordan Shoes
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-[--color-light-200]">
+              <Link href="#" className="hover:text-neutral-200">
                 Running Shoes
               </Link>
             </li>
@@ -68,27 +68,27 @@ export default function Footer() {
         </nav>
 
         <nav aria-label="Clothing" className="space-y-3">
-          <h4 className="text-[length:--text-heading-3] font-[--text-heading-3--font-weight]">
+          <h4 className="text-[length:--text-heading-3] font-[--text-heading-3--font-weight] text-white">
             Clothing
           </h4>
-          <ul className="space-y-2 text-[--color-light-400]">
+          <ul className="space-y-2 text-neutral-400">
             <li>
-              <Link href="#" className="hover:text-[--color-light-200]">
+              <Link href="#" className="hover:text-neutral-200">
                 All Clothing
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-[--color-light-200]">
+              <Link href="#" className="hover:text-neutral-200">
                 Modest Wear
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-[--color-light-200]">
+              <Link href="#" className="hover:text-neutral-200">
                 Hoodies & Pullovers
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-[--color-light-200]">
+              <Link href="#" className="hover:text-neutral-200">
                 Shirts & Tops
               </Link>
             </li>
@@ -96,27 +96,27 @@ export default function Footer() {
         </nav>
 
         <nav aria-label="Kids" className="space-y-3">
-          <h4 className="text-[length:--text-heading-3] font-[--text-heading-3--font-weight]">
+          <h4 className="text-[length:--text-heading-3] font-[--text-heading-3--font-weight] text-white">
             Kids'
           </h4>
-          <ul className="space-y-2 text-[--color-light-400]">
+          <ul className="space-y-2 text-neutral-400">
             <li>
-              <Link href="#" className="hover:text-[--color-light-200]">
+              <Link href="#" className="hover:text-neutral-200">
                 Infant & Toddler Shoes
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-[--color-light-200]">
+              <Link href="#" className="hover:text-neutral-200">
                 Kids' Shoes
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-[--color-light-200]">
+              <Link href="#" className="hover:text-neutral-200">
                 Kids' Jordan Shoes
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-[--color-light-200]">
+              <Link href="#" className="hover:text-neutral-200">
                 Kids' Basketball Shoes
               </Link>
             </li>
