@@ -21,14 +21,21 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-[--color-light-100] border-b border-[--color-light-300]">
+    <header className="sticky top-0 z-50 bg-[--color-light-100]/95 backdrop-blur border-b border-[--color-light-300]">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6"
+        className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6"
         aria-label="Primary Navigation"
       >
         <div className="flex items-center gap-3">
           <Link href="#" className="flex items-center" aria-label="Home">
-            <Image src="/logo.svg" alt="Logo" width={28} height={28} priority />
+            <Image
+              src="/logo.svg"
+              alt="Logo"
+              width={32}
+              height={32}
+              priority
+              className="invert-0"
+            />
           </Link>
         </div>
 
@@ -71,7 +78,7 @@ export default function Navbar() {
             <li key={link.label}>
               <Link
                 href={link.href}
-                className="text-[--color-dark-900] text-[length:--text-body] leading-[--text-body--line-height] font-[--text-body--font-weight] hover:text-[--color-dark-700] transition-colors"
+                className="text-[--color-dark-900] text-[length:--text-body] leading-[--text-body--line-height] font-[--text-body--font-weight] hover:text-[--color-dark-700] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[--color-dark-900] underline-offset-8 hover:underline"
               >
                 {link.label}
               </Link>
@@ -79,11 +86,11 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="hidden items-center gap-6 sm:flex">
-          <button className="text-[--color-dark-900] hover:text-[--color-dark-700] transition-colors">
+        <div className="hidden items-center gap-3 sm:flex">
+          <button className="rounded-md px-3 py-2 text-[--color-dark-900] hover:bg-[--color-light-200] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[--color-dark-900]">
             Search
           </button>
-          <button className="text-[--color-dark-900] hover:text-[--color-dark-700] transition-colors">
+          <button className="rounded-md px-3 py-2 text-[--color-light-100] bg-[--color-dark-900] hover:bg-[--color-dark-700] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[--color-dark-900]">
             My Cart (2)
           </button>
         </div>
