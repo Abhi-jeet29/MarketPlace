@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 py-10 sm:px-6 md:grid-cols-5">
         <div className="md:col-span-1">
           <Link href="#" className="inline-flex items-center" aria-label="Home">
-            <Image src="/logo.svg" width={32} height={32} alt="Logo" />
+            <Image src="/logo.svg" width={32} height={32} alt="Logo" className="invert" />
           </Link>
         </div>
 
