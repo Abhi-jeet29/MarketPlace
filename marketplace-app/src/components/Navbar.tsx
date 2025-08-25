@@ -21,27 +21,20 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-[--color-light-100]/95 backdrop-blur border-b border-[--color-light-300]">
+    <header className="sticky top-0 z-50 bg-[--color-light-100] border-b border-[--color-light-300]">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6"
+        className="mx-auto grid max-w-7xl grid-cols-3 items-center px-4 py-4 sm:px-6"
         aria-label="Primary Navigation"
       >
         <div className="flex items-center gap-3">
           <Link href="#" className="flex items-center" aria-label="Home">
-            <Image
-              src="/logo.svg"
-              alt="Logo"
-              width={32}
-              height={32}
-              priority
-              className="invert-0"
-            />
+            <Image src="/logo.svg" alt="Logo" width={26} height={26} priority />
           </Link>
         </div>
 
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-md p-2 text-[--color-dark-900] hover:bg-[--color-light-200] focus:outline-none focus:ring-2 focus:ring-[--color-dark-900] sm:hidden"
+          className="justify-self-center inline-flex items-center justify-center rounded-md p-2 text-[--color-dark-900] hover:bg-[--color-light-200] focus:outline-none focus:ring-2 focus:ring-[--color-dark-900] sm:hidden"
           aria-controls="primary-menu"
           aria-expanded={isOpen}
           onClick={() => setIsOpen((v) => !v)}
@@ -73,12 +66,12 @@ export default function Navbar() {
           </svg>
         </button>
 
-        <ul className="hidden gap-8 sm:flex">
+        <ul className="hidden sm:flex items-center justify-center gap-8 font-[--text-body--font-weight] text-[length:--text-body] text-[--color-dark-900]">
           {NAV_LINKS.map((link) => (
             <li key={link.label}>
               <Link
                 href={link.href}
-                className="text-[--color-dark-900] text-[length:--text-body] leading-[--text-body--line-height] font-[--text-body--font-weight] hover:text-[--color-dark-700] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[--color-dark-900] underline-offset-8 hover:underline"
+                className="leading-[--text-body--line-height] hover:text-[--color-dark-700] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[--color-dark-900] underline-offset-8 hover:underline"
               >
                 {link.label}
               </Link>
@@ -86,7 +79,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="hidden items-center gap-3 sm:flex">
+        <div className="hidden items-center justify-end gap-4 sm:flex">
           <button className="rounded-md px-3 py-2 text-[--color-dark-900] hover:bg-[--color-light-200] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[--color-dark-900]">
             Search
           </button>
@@ -99,14 +92,14 @@ export default function Navbar() {
       {isOpen && (
         <div
           id="primary-menu"
-          className="sm:hidden border-t border-[--color-light-300]"
+          className="sm:hidden border-t border-[--color-light-300] bg-[--color-light-100]"
         >
-          <ul className="space-y-1 px-4 py-3">
+          <ul className="space-y-1 px-4 py-3 text-[--color-dark-900]">
             {NAV_LINKS.map((link) => (
               <li key={link.label}>
                 <Link
                   href={link.href}
-                  className="block rounded-md px-2 py-2 text-[--color-dark-900] hover:bg-[--color-light-200]"
+                  className="block rounded-md px-2 py-2 hover:bg-[--color-light-200]"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
@@ -114,8 +107,10 @@ export default function Navbar() {
               </li>
             ))}
             <li className="mt-2 flex items-center justify-between px-2">
-              <button className="text-[--color-dark-900]">Search</button>
-              <button className="text-[--color-dark-900]">My Cart (2)</button>
+              <button className="rounded-md px-3 py-2">Search</button>
+              <button className="rounded-md bg-[--color-dark-900] px-3 py-2 text-[--color-light-100]">
+                My Cart (2)
+              </button>
             </li>
           </ul>
         </div>
